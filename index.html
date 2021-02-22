@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>이나현 : 크롬에 최적화 되어 있습니다.</title>
+<!-- 웹폰트 -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+<!-- 파비콘 -->
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+<!-- 스타일 -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fullpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<ul class="side_menu">
+			<li><a href="index.html">HOME</a></li>
+			<li class="port_open"><a href="#none">PORTFOLIO</a></li>
+			<li><a href="#section2">SKILL</a></li>
+		</ul>
+		<div class="mouse_scroll">
+			<img src="img/mouse_scroll.png" alt="mousescroll">
+		</div>
+	</header>
+	<!-- 메뉴오픈 -->
+	<div class="port_menu">
+		<span class="close">
+			<img src="img/close.png" alt="closebutton">
+		</span>
+		<div class="port_frame">
+			<ul class="port_port">
+				<li><a href="hansot/index.html" target="_blank" class="port_01"><img src="img/slide_01.jpg" alt="img01"></a></li>
+				<li><a href="woori/index.html" target="_blank" class="port_02"><img src="img/slide_02.jpg" alt="img02"></a></li>
+				<li><a href="kolon/index.html" target="_blank" class="port_03"><img src="img/slide_03.jpg" alt="img03"></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 메뉴오픈 끝-->
+	<div id="fullpage">
+		<div class="section section0">
+			<p class="port_tit">PORTFOLIO_WEB</p>
+			<p class="port_sub">_Website Renewal Design</p>
+			<ul class="port_web">
+				<li>
+					<a href="kolon/index.html" target="_blank">
+						<p>kolon</p>
+						<img src="img/shape.png" alt="portfolio">
+					</a>
+				</li>
+				<li>
+					<a href="hansot/index.html" target="_blank">
+						<p>hansot</p>
+						<img src="img/shape.png" alt="portfolio">
+					</a>
+				</li>
+				<li>
+					<a href="woori/index.html" target="_blank">
+						<p>woori</p>
+						<img src="img/shape.png" alt="portfolio">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="section section1">
+			<!-- 배경효과 -->
+			<div id="particles-js"></div>
+			<!-- 배경효과 끝 -->
+			<p class="port_tit">PORTFOLIO_UI/UX</p>
+			<ul class="port_uiux">
+				<li>
+					<a href="nongsim/index.html" target="_blank">
+						<button class="btn-2">NONGSIM</button>
+					</a>
+				</li>
+				<li>
+					<a href="millet/index.html" target="_blank">
+						<button class="btn-2">MILLET</button>
+					</a>
+				</li>
+				<li>
+					<a href="diary/index.html" target="_blank">
+						<button class="btn-2">DIARY</button>
+					</a>
+				</li>
+			</ul>
+			<div class="qr_code">
+				<a href="https://m.9table.kr/main/index.php" target="_blank">
+					<p>모바일로 확인해주세요</p>
+					<img src="img/qr_code.jpg" alt="qrcode">
+				</a>
+			</div>
+		</div>
+		<div class="section section2" id="section2">
+			<div class="my_skill">
+				<ul>
+					<li><span class="number number0"></span>potoshop<img src="img/hover.png" alt="hover_icon" class="display_none "></li>
+					<li><span class="number number1"></span>html&css<img src="img/hover.png" alt="hover_icon" class="display_none"></li>
+					<li><span class="number number2"></span>jQuery<img src="img/hover.png" alt="hover_icon" class="display_none"></li>
+					<li><span class="number number3"></span>premiere pro<img src="img/hover.png" alt="hover_icon" class="display_none"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 스크립트 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript">
+	
+	/*풀페이지*/
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#fff', '#fff', '#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['MAIN', 'BIO &amp; CHEMICAL', 'LOCATIONS', 'SERVICE']
+			});
+		});
+	
+	/*배경효과*/
+	particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":1000}},"color":{"value":"#000000"},"shape":{"type":"triangle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#000000","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+	
+</script>
+</body>
+</html>
