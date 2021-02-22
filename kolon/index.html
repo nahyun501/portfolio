@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>코오롱생명과학</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+	<link href="font/NotoKR-Light/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="font/NotoKR-Bold/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="font/NotoKR-Regular/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="font/NotoKR-Thin/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="font/NotoKR-Black/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="font/NotoKR-Medium/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#fff', '#000', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['MAIN', 'BIO &amp; CHEMICAL', 'LOCATIONS', 'SERVICE'],
+				afterLoad: function(anchorLink, index){
+					console.log(index);
+					if (index >= 3) {
+						$("header").addClass("bg");
+						$("#fp-nav ul li .fp-tooltip.right").addClass("navy");
+						$("#fp-nav ul li a span").addClass("navy");
+					} else {
+						$("header").removeClass("bg");
+						$("#fp-nav ul li a span").removeClass("navy");
+						$("#fp-nav ul li .fp-tooltip.right").removeClass("navy");
+					}
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1><a href="#"><img src="images/LOGO.png" alt="로고"></a></h1>
+			<ul id="gnb">
+				<li>
+					<a href="#">회사소개</a>
+					<ul>
+						<li><a href="#">인사말</a></li>
+						<li><a href="#">개요</a></li>
+						<li><a href="#">사업장 소개</a></li>
+						<li><a href="#">CL</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">사업부문</a>
+					<ul>
+						<li><a href="#">BIO</a></li>
+						<li><a href="#">CHEMICAL</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">IR/PR</a>
+					<ul>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">뉴스</a></li>
+						<li><a href="#">IR자료</a></li>
+						<li><a href="#">재무실적</a></li>
+						<li><a href="#">주가정보</a></li>
+						<li><a href="#">공시</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">인재채용</a>
+					<ul>
+						<li><a href="#">채용프로세스</a></li>
+						<li><a href="#">조직문화</a></li>
+						<li><a href="#">복리후생</a></li>
+						<li><a href="#">인재육성</a></li>
+						<li><a href="#">직무소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">고객센터</a>
+					<ul>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">자주 묻는 질문</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul id="snb">
+				<li><a href="#">국문</a></li>
+				<li><a href="#">영문</a></li>
+			</ul>
+			<figure><a href="#"><img src="images/menu_white.png" alt="메뉴바"></a></figure>
+		</div>
+	</header>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="wrap">
+			<div class="intro">
+				<p>우리 곁에 가까이 건강과<br>행복한 미래를 위해</p>
+				<span>코오롱생명과학이 함께합니다.</span>
+				<i>KOLON LIFE SCIENCE</i>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="intro">
+			<div id="bg_left">
+				<p>BIO</p>
+				<span>GLOBAL LEADING CELL &amp; GENE THERAPHY COMPANY</span>
+				<ul>
+					<li>
+						<img src="images/bio-icon__01.png" alt="아이콘1">
+						<br>신경병증성<br>통증 치료제
+					</li>
+					<li>
+						<img src="images/bio-icon__02.png" alt="아이콘2">
+						<br>종양살상<br>바이러스 치료제
+					</li>
+					<li>
+						<img src="images/bio-icon__03.png" alt="아이콘3">
+						<br>암 백신
+					</li>
+				</ul>
+			</div>
+			<div id="bg_right">
+				<p>CHEMICAL</p>
+				<span>최고의 기술력으로 케미컬 분야의 선도자가 되겠습니다.</span>
+				<ul>
+					<li>
+						<img src="images/chemical-icon__01.png" alt="아이콘1">
+						ACTIVE<br>PHARMACEUTICAL<br>INGREDIENTS
+					</li>
+					<li>
+						<img src="images/chemical-icon__02.png" alt="아이콘2">
+						SPACIALTY<br>CHEMICAL
+					</li>
+					<li>
+						<img src="images/chemical-icon__03.png" alt="아이콘3">
+						WATER<br>SOLUTION
+					</li>
+					<li>
+						<img src="images/chemical-icon__04.png" alt="아이콘4">
+						COSMETIC<br>ACTIVES
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<ul id="small_img">
+				<li class="select"><img src="images/location_small_img_01.jpg" alt="작은이미지1"></li>
+				<li><img src="images/location_small_img_02.jpg" alt="작은이미지2"></li>
+				<li><img src="images/location_small_img_03.jpg" alt="작은이미지3"></li>
+			</ul>
+			<ul id="text">
+				<li class="view">
+					<p>LOCATIONS</p>
+					<dl>
+						<dt>본사/연구소</dt>
+						<dd>서울특별시 강서구 마곡동로<br>110 ONE &amp; ONLY TOWER</dd>
+					</dl>
+					<span>대표전화 02-3677-4150</span>
+					<p class="detail"><a href="#">자세히 보기</a></p>
+				</li>
+				<li>
+					<p>LOCATIONS</p>
+					<dl>
+						<dt>충주공장</dt>
+						<dd>충주시 대소원면 기업도시 1로 54</dd>
+					</dl>
+					<span>대표전화 	043-841-7400</span>
+					<p class="detail"><a href="#">자세히 보기</a></p>
+				</li>
+				<li>
+					<p>LOCATIONS</p>
+					<dl>
+						<dt>김천공장</dt>
+						<dd>경상북도 김천시 공단로 238(응명동)</dd>
+					</dl>
+					<span>대표전화 054-429-1000</span>
+					<p class="detail"><a href="#">자세히 보기</a></p>
+				</li>
+			</ul>
+			<ul id="big_img">
+				<li class="view"><img src="images/location_big_img_01.jpg" alt="큰이미지1"></li>
+				<li><img src="images/location_big_img_02.jpg" alt="큰이미지2"></li>
+				<li><img src="images/location_big_img_03.jpg" alt="큰이미지3"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="last wrap">
+			<ul>
+				<li>
+					<a href="#">
+						<p>인재채용</p>
+						<dl>
+							<dt>생활의 혁신을 함께 만들어갈 ONE &amp; ONLY 인재를 기다립니다.</dt>
+							<dd>코오롱생명과학의 주역이 될 최고의 경쟁력을 갖춘 인재를 찾습니다.</dd>
+						</dl>
+						<figure><img src="images/last_img_01.jpg" alt="인재채용 이미지"></figure>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>회사소개</p>
+						<dl>
+							<dt>항상 새로운 가능성을 생각하며 다가올 미래를 준비합니다.</dt>
+							<dd>인사말 / 개요 / 사업장 소개 / CI</dd>
+						</dl>
+						<figure><img src="images/last_img_02.jpg" alt="회사소개 이미지"></figure>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>주가정보</p>
+						<dl>
+							<dt>세계를 선도하는 코오롱</dt>
+							<dd>코오롱 글로벌 / 코오롱글로벌우 / 코오롱생명과학 / 코오롱플라스틱 / 코오롱머티리얼 / 코오롱티슈진</dd>
+						</dl>
+						<figure><img src="images/last_img_03.jpg" alt="주가정보 이미지"></figure>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>고객센터</p>
+						<dl>
+							<dt>코오롱생명과학에 대해 궁금하신 사항은 문의 바랍니다.</dt>
+							<dd>바이오 문의 / 케미컬 문의 / 채용 문의 / IR 문의</dd>
+						</dl>
+						<figure><img src="images/last_img_04.jpg" alt="고객센터 이미지"></figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section fp-auto-height" id="section4">
+		<div class="wrap">
+			<span><a href="#">법적 고지</a></span>
+			<span><a href="#">개인정보처리방침</a></span>
+			<span><a href="#">윤리경영</a></span>
+			<p id="copy">COPYRIGHT(C) 2019 KOLON LIFE SCIENCE ALL RIGHTS RESERVED.</p>
+			<div id="icon">
+				<ul id="sns">
+					<li><a href="#"><img src="images/sns_icon_01.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="images/sns_icon_02.png" alt="youtube"></a></li>
+					<li><a href="#"><img src="images/sns_icon_03.png" alt="blog"></a></li>
+					<li><a href="#"><img src="images/sns_icon_04.png" alt="instagram"></a></li>
+				</ul>
+				<p><a href="#">KOLON CHENNEL</a></p>
+				<p><a href="#">계열사 바로가기 <img src="images/icon_white.png" alt="아래로 아이콘"></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$("#small_img li").click(function(){
+	$("#small_img li").removeClass("select");
+	$(this).addClass("select");
+	var n = $(this).index(); 
+	
+	$("#text li").removeClass("view");
+	$("#text li").eq(n).addClass("view");
+	
+	$("#big_img li").removeClass("view");
+	$("#big_img li").eq(n).addClass("view");
+});
+	
+	$("#gnb").hover(
+		function(){
+			$("header").stop().animate({"height":"330"},100);
+		},
+		function(){
+			$("header").stop().animate({"height":"90"},100);
+		}
+	);
+	
+	
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

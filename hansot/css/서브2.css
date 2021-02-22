@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*reset*/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img { vertical-align: top;}
+
+/*common*/
+.wrap{width: 1000px; margin: 0 auto; position: relative;}
+ul:after, .wrap:after{content: ""; clear: both; display: block;}
+h2{position: absolute; left: -9999px;}
+
+/*header*/
+header{height: 100px; background: #fff; position: relative; z-index: 99; border-bottom: 5px solid #f2c000;}
+header h1{padding-top: 27px; display: inline-block;}
+header #gnb li ul li a{line-height: 40px;}
+header #gnb li a{line-height: 100px;}
+header #gnb ul{display: none;}
+header #gnb:after{content: ""; clear: both; display: block;}
+header #gnb{position: absolute; top: 0px; right: 0;}
+header #gnb > li{float: left; font-family: ntbl; font-size: 16px; width: 120px; text-align: center; display: block; border-bottom: 5px solid #f2c000; transition: 0.3s;}
+header #gnb > li > a:link, header #gnb > li > a:visited{color: #222; display: block;}
+header #gnb > li > a:hover, header #gnb > li > a:active, header #gnb > li > a:focus{color: #f2c000;}
+header #gnb ul li a:link, header #gnb ul li a:visited{background: #fff; display: block; font-size:14px; font-family: ntm; color: #222;}
+header #gnb ul li a:hover, header #gnb ul li a:active, header #gnb ul li a:focus{text-decoration: underline; }
+
+/*main*/
+#main img{width: 100%;}
+
+/*text*/
+#text{text-align: right; color: #222;}
+#text p{font-size: 30px; font-family: ntbl; color: #f2c000; margin-top: -25px;}
+#text .num{font-size: 100px; font-style: italic; padding-top: 200px; position: relative;}
+#text .num:after { content:""; display: inline-block; width:8px; height:8px; background:#f2c000; margin-left: 5px;}
+#text dl dt{font-size: 50px; font-family: ntt; letter-spacing: 20px; margin-right: -20px; margin-top: 10px;}
+#text dl dd{padding: 40px 0 200px; font-size: 24px; font-family: ntl; margin-right: -8px;}
+
+/*icon*/
+#icon{background: #f1eee6; height: 814px; color: #222;}
+#icon ul{padding-top: 77px;}
+#icon ul li{float: left; width: 326px; height: 326px; border: 1px solid #fff; text-align: center; margin: 0 6px 6px 0;}
+#icon ul li:nth-child(3), #icon ul li:nth-child(5){margin-right: 0;}
+#icon ul li:nth-child(4){margin-left: 168px;}
+#icon ul li img{padding-top: 20px;}
+#icon ul li p{font-size: 20px; font-family: ntbl; padding:10px 0 5px;}
+#icon ul li span{font-size: 18px; font-family: ntr;}
+
+/*text2*/
+#text2{text-align: left; color: #222;}
+#text2 p{font-size: 30px; font-family: ntbl; color: #f2c000; margin-top: -25px;}
+#text2 .num{font-size: 100px; font-style: italic; padding-top: 200px;}
+#text2 .num:after { content:""; display: inline-block; width:8px; height:8px; background:#f2c000; margin-left: 5px;}
+#text2 dl dt{font-size: 50px; font-family: ntt;letter-spacing: 20px; margin-top: 10px;}
+#text2 dl dd{padding: 40px 0 200px; font-size: 24px; font-family: ntl;}
+
+/*cont*/
+#cont{background: #efefef;}
+#cont  .left{float: left; margin-right: 40px;}
+#cont .right{float: right; margin-left: 40px;}
+#cont .box_left{float: left;}
+#cont .box_right{float: right; text-align: right;}
+#cont > div{padding-top: 70px;}
+#cont p{color: #f6ca00; font-size: 18px; font-family: ntbl;}
+#cont dl dt{color: #222; font-size: 30px; font-family: ntbl;}
+#cont dl dd{color: #222;  font-size:20px; font-family: ntr; margin-top: 10px;}
+#cont #cont1{height: 280px; border-bottom: 2px solid #fff;}
+#cont #cont1 img{margin-left: 200px;}
+#cont #cont1 .box_left{margin-top: 30px;}
+#cont #cont2{height: 260px; border-bottom: 2px solid #fff;}
+#cont #cont2 img{margin-right: 220px;}
+#cont #cont2 .box_right{margin-top: 30px;}
+#cont #cont3{height: 273px; border-bottom: 2px solid #fff;}
+#cont #cont3 img{margin-left: 224px;}
+#cont #cont3 .box_left{margin-top: 20px;}
+#cont #cont4{height: 263px;}
+#cont #cont4 img{margin-right: 179px;}
+#cont #cont4 .box_right{margin-top: 18px;}
+
+/*text3*/
+#text3{text-align: right; color: #222;}
+#text3 p{font-size: 30px; font-family: ntbl; color: #f2c000; margin-top: -25px;}
+#text3 .num{font-size: 100px; font-style: italic; padding-top: 200px;}
+#text3 .num:after { content:""; display: inline-block; width:8px; height:8px; background:#f2c000; margin-left: 5px;}
+#text3 dl dt{font-size: 50px; font-family: ntt; letter-spacing: 20px; margin-right: -20px; margin-top: 10px;}
+#text3 dl dd{padding: 40px 0 200px; font-size: 24px; font-family: ntl; margin-right: -8px;}
+
+/*trai*/
+#trai{height: 1380px; background: #faf8f4;}
+#trai img{margin-top: 130px;}
+#trai dl:nth-child(2){position:absolute; top: 145px; left: -206px; text-align: right;}
+#trai dl:nth-child(3){position:absolute; top: 385px; right: -350px;}
+#trai dl:nth-child(4){position:absolute; top: 1050px; left: 160px;}
+#trai dl dt{font-size: 36px; color: #222; font-family: ntbl; letter-spacing: -2px;}
+#trai dl dt span{color: #f2c000; }
+#trai dl dd{color: #222; font-size: 18px; font-family: ntr; padding-top: 10px;}
+
+/*bottom*/
+#bottom{background: url("../imges/brand_visual_02.jpg") no-repeat center; height: 730px; margin-top: 200px;}
+#bottom p{color: #fff; font-family: ntb; font-size: 50px; text-align: center; padding: 130px 0 20px;}
+#bottom span{color: #fff; font-family: ntl; font-size: 24px; text-align: center; display: block;}
+#bottom span i{font-style: normal; font-family: ntm;}
+
+/*footer*/
+footer{height: 278px; background: #f2c000;}
+footer ul{text-align: center;}
+footer ul li{display: inline-block;}
+footer #info{padding: 70px 0 30px;}
+footer #info li{margin-right: 20px; font-size: 14px; font-family: ntb;}
+footer #info li a{color: #222;}
+footer #info li:last-child{margin-right: 0;}
+
+footer #detail li, footer #plus li{font-size: 14px; font-family: ntm; color: #222; margin-left: 18px;}
+footer #detail li:last-child, footer #plus li:last-child{margin-right: 0;}
+footer p{text-align: center; font-size: 16px; font-family: ntm; margin-top: 30px; color: #222;}
+
+@media (max-width:800px) { /* 모바일용 */
+	.pc{display: none;}
+	.wrap {width:90%;} 
+	
+/*header*/
+header{position:relative; z-index:none; border-bottom: 0; height: 70px;}
+header #logo{padding: 20px 0 0 10px;}
+header #menu{position: absolute; top: 20px; right: 10px;}
+
+/*text*/
+#text p{font-size: 16px; margin-top: -10px;}
+#text .num{font-size: 50px; padding-top: 70px;}
+#text .num:after { width:4px; height:4px;}
+#text dl dt{font-size: 20px; letter-spacing: 13px; margin-right: -15px; margin-top: 10px;}
+#text dl dd{padding: 20px 0 70px; font-size: 14px; margin-right: -8px;}
+	
+/*icon*/
+#icon{height: 545px; width: 100%;}
+#icon ul{padding-top: 50px;}
+#icon ul li{float: left; width:48%; height: 50%; margin: 0 2% 2% 0;}
+#icon ul li:nth-child(2), #icon ul li:nth-child(4){margin-right: 0;}
+#icon ul li:nth-child(4){margin-left: 2%;}
+#icon ul li img{padding-top: 15px; width: 50%;}
+#icon ul li p{font-size: 12px; padding:5px 0 15px;}
+	
+/*text2*/
+#text2 p{font-size: 16px; margin-top: -10px;}
+#text2 .num{font-size: 50px; padding-top: 70px;}
+#text2 .num:after {width:4px; height:4px;}
+#text2 dl dt{font-size: 20px; letter-spacing: 13px; margin-right: -15px; margin-top: 10px;}
+#text2 dl dd{padding: 20px 0 70px; font-size: 14px; margin-right: -8px;}
+	
+/*cont*/
+#cont img{width: 30%;}
+#cont  .left{margin-right: 0px;}
+#cont .right{margin-left: 0px;}
+#cont > div{padding-top: 30px;}
+#cont p{font-size: 12px; padding-top: 15px;}
+#cont dl dt{font-size: 20px; letter-spacing: -1px;}
+#cont dl dd{font-size:12px; margin-top: 10px;}
+#cont #cont1{height: 200px;}
+#cont #cont1 img{margin-left: 0; position: absolute; right: 5px; top: 0;}
+#cont #cont1 .box_left{margin-top: 30px;}
+#cont #cont2{height: 180px;}
+#cont #cont2 img{margin-right: 0; position: absolute; left: 5px; top: 0;}
+#cont #cont2 .box_right{margin-top: 30px;}
+#cont #cont3{height: 200px;}
+#cont #cont3 img{margin-left: 0; position: absolute; right: 5px; top: 0;}
+#cont #cont3 .box_left{margin-top: 20px;}
+#cont #cont3 p{padding-top: 35px;}
+#cont #cont4{height: 180px;}
+#cont #cont4 img{margin-right: 0; position: absolute; left: 5px; top: 0;}
+#cont #cont4 .box_right{margin-top: 18px;}
+	
+/*text3*/
+#text3 p{font-size: 16px; margin-top: -10px;}
+#text3 .num{font-size: 50px; padding-top: 70px;}
+#text3 .num:after {width:4px; height:4px;}
+#text3 dl dt{font-size: 20px; letter-spacing: 13px; margin-right: -15px; margin-top: 10px;}
+#text3 dl dd{padding: 20px 0 70px; font-size: 14px; margin-right: -8px;}
+	
+/*trai*/
+#trai{height: 210px; position: relative; margin-bottom: 40px;}
+#trai img {width: 98%; margin-top: 10px;}
+#trai .wrap{display: flex; justify-content: center; align-items: center;}
+#trai dl:nth-child(2){position:static; text-align: left; padding-right: 2%;}
+#trai dl:nth-child(3){position:static; padding-right: 2%;}
+#trai dl:nth-child(4){position:static;}
+#trai dl dt{font-size: 10px;  letter-spacing: 0; text-align: center; padding-top: 40px;}
+#trai dl:first-child img{margin: 0 auto; display: block;}
+	
+/*footer*/
+footer{height: 220px; background: #f2c000;}
+footer img{margin: 0px auto; display: block; padding-top: 20px;}
+footer ul li{display: inline-block;}
+footer #info{padding: 10px 0 10px;}
+footer #info li{margin-right: 2px; font-size: 10px;}
+
+footer #detail li, footer #plus li{font-size: 10px; margin-left: 2px;}
+footer p{font-size: 11px; margin-top: 10px;}
+	
+	
+	
+}
+@media (min-width:801px) { /* PC용 */
+	.mob{display: none;}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

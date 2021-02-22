@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*reset*/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: top;}
+
+/*reset*/
+body{font-size:16px; font-family: "Noto Sans KR Medium";  color: #121212; background: #f7f7f7;}
+.wrap{width: 960px; margin: 0 auto; position: relative;}
+.wrap:after, ul:after{content: ""; clear: both; display: block;}
+h2{position: absolute; left: -9999px;}
+
+/*header*/
+header{height: 60px; background: #fff;}
+header #snb, header #gnb{float: left;}
+header #snb li{float: left; padding-right: 20px;}
+header #snb li h1{ width: 122px; height: 31px; padding-top: 14px; box-sizing: border-box; text-align: center; }
+header #snb li:nth-child(2){padding-right: 5px; background: url("../imges/gnb_member_re1121.png") no-repeat center; width: 100px; height: 38px; margin-top: 11px;}
+header #snb li:nth-child(2) a{color: #fff; padding-left: 40px;}
+header #snb li:last-child{background: url("../imges/gnb_cert_re1121.png") no-repeat center; width: 132px; height: 37px;  margin-top: 11px;}
+header #snb li:last-child a{padding-left: 30px;}
+header #snb li a{color: #121212; line-height: 37px;}
+
+header #gnb li{float: left; padding-left: 20px; line-height: 60px;}
+header #gnb li a{color: #121212; font-size: 18px;}
+header #gnb li:last-child a{width: 34px; height: 33px; padding-top: 13px; display: block; line-height: 60px;}
+
+/*section1*/
+#main{height: 520px; background: #23a3f9;}
+#main a{position: absolute; top: 52px; right: 0;}
+#main dl{color: #fff;}
+#main dl dt{padding-top: 148px; font-size: 42px; line-height: 1.1; font-weight: bold; font-family: ntb;}
+#main dl dd{font-size: 20px; padding-top: 19px; font-family: ntl;}
+#main dl dd:last-child{padding-top: 6px; line-height: 1.2; letter-spacing: -1.5px; font-family: ntl;}
+
+#box ul{box-shadow: 0 3px 5px #aaa; width: 610px; border-radius:100px; overflow: hidden; margin: -42px auto 0;}
+#box ul li{float: left; display: block; background: #0083cb; width: 140px; height: 85px;  line-height: 85px; text-align: center;}
+#box ul li:last-child{width: 190px; background: #fff; }
+#box ul li a{color: #fff; font-size: 32px;}
+#box ul li:last-child a{color: #0083cb;}
+
+/*section2*/
+#icon{padding-top: 80px;}
+#icon ul{height: 120px; background: #fff;}
+#icon ul li{float: left; width: 120px; text-align: center; padding-top: 11px;}
+#icon ul li a{color: #121212; font-family: ntb;}
+
+/*section3*/
+#cont h3{margin:80px 0 30px 0; text-align: center; font-size: 36px; font-family: ntb; }
+#cont ul li{float: left; width: 310px; background: #fff; margin:25px 15px 0 0;}
+#cont ul li:nth-child(3), #cont ul li:nth-child(6){margin-right: 0;}
+#cont ul li:nth-child(1), #cont ul li:nth-child(3), #cont ul li:nth-child(5){height: 508px;}
+#cont ul li:nth-child(2), #cont ul li:nth-child(4), #cont ul li:nth-child(6){height: 238px;}
+#cont ul li:nth-child(5){position: absolute; top: 375px; left: 325px;}
+#cont ul li:nth-child(6){position: absolute; right: 0; top: 615px;}
+
+#cont ul li a{color: #121212;}
+#cont ul li a p{margin: 30px 0 18px 30px;}
+#cont ul li a dl{padding-left: 30px;}
+#cont ul li a dl dt{font-size: 28px; font-family: ntb; line-height: 1.1; }
+#cont ul li a dl dd{font-family: ntr; padding-top: 20px;}
+#cont ul li a dl .bold{font-family: ntb; font-size: 16px;}
+#cont ul li a dl .gray{color: #8f8f8f; font-size: 14px; padding-top: 24px;}
+#cont ul li a dl .blue{color: #046fd9; font-size: 14px; padding-top: 17px;}
+#cont ul .pad{padding-top: 30px;}
+
+#cont span a{font-size: 14px; font-family: ntb; display: block; text-align: center; width: 78px; height: 28px; line-height: 28px; background: #fff; border: 1px solid #d3d3d3; color: #121212; margin: 70px auto;}
+
+/*section4*/
+#news{background: #fff; border-bottom: 2px solid #ddd;}
+#news .wrap{content: ""; clear: both; display: block;}
+#news dl{float: left; width: 295px; height: 180px; padding-right: 15px; margin: 90px 0 40px 0; position: relative;}
+#news dl:last-child{padding-right: 0; width: 310px;}
+#news dl a{color: #121212;}
+#news dl dt{font-size: 30px; font-family: ntb;padding-bottom: 20px;}
+#news dl dt img{position: absolute; top: 10px; right: 26px;}
+#news dl dd{font-size: 15px; font-family: ntr; padding-top: 10px;}
+
+/*footer*/
+footer{background: #fff;}
+footer #info{ border-bottom: 1px solid #ddd;}
+footer #info ul{height: 40px; line-height: 40px; }
+footer #info ul li{float: left; padding-right: 60px; font-size: 14px;}
+footer #info ul li img{margin: 15px 0 0 10px;}
+footer p{font-size: 12px; color: #777; padding-top: 20px;}
+footer p:last-child{padding: 15px 0 20px;}
+
+
+
+
+

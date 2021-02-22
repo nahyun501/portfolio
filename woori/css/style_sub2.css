@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*reset*/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: top;}
+
+/*reset*/
+body{font-size:16px; font-family: "Noto Sans KR Medium";  color: #121212; background: #fff;}
+.wrap{width: 960px; margin: 0 auto; position: relative;}
+.wrap:after, ul:after{content: ""; clear: both; display: block;}
+h2{position: absolute; left: -9999px;}
+
+/*header*/
+header{height: 60px; background: #fff;}
+header #snb, header #gnb{float: left;}
+header #snb li{float: left; padding-right: 20px;}
+header #snb li h1{ width: 122px; height: 31px; padding-top: 14px; box-sizing: border-box; text-align: center; }
+header #snb li:nth-child(2){padding-right: 5px; background: url("../imges/gnb_member_re1121.png") no-repeat center; width: 100px; height: 38px; margin-top: 11px;}
+header #snb li:nth-child(2) a{color: #fff; padding-left: 40px;}
+header #snb li:last-child{background: url("../imges/gnb_cert_re1121.png") no-repeat center; width: 132px; height: 37px;  margin-top: 11px;}
+header #snb li:last-child a{padding-left: 30px;}
+header #snb li a{color: #121212; line-height: 37px;}
+
+header #gnb li{float: left; padding-left: 20px; line-height: 60px;}
+header #gnb li a{color: #121212; font-size: 18px;}
+header #gnb li:last-child a{width: 34px; height: 33px; padding-top: 13px; display: block; line-height: 60px;}
+
+/*main*/
+#main{background: #cce9ec; height: 520px;}
+#main p{font-family: 'ntr'; font-size: 40px; line-height: 1.3; position: absolute; top: 125px; left: 0;}
+#main p span{color: #006dad; font-family: 'ntb'; font-size: 52px;}
+#main dl{position: absolute; top: 270px; left: 0;}
+#main dl dt{font-size: 30px; font-family: 'ntb'; line-height: 1.2;}
+#main dl dd{font-size: 20px; font-family: 'ntl'; padding-top: 22px; line-height: 1.1;}
+#main img{position: absolute; top: 0; right: -280px;}
+
+/*cont*/
+#cont{padding-top: 70px;}
+#cont #cont1, #cont #cont2, #cont #cont3{float: left; width: 280px; margin-right: 60px;}
+#cont #cont3{margin-right: 0;}
+#cont dl dt{font-size: 30px; font-family: 'ntb';}
+#cont dl dd{font-size: 18px; font-family: 'ntr'; padding-top: 20px;}
+#cont p{font-size: 14px; padding-top: 20px;}
+#cont a{color: #000;}
+#cont img{padding-top: 30px;}
+
+#cont #cont3 a span{display: block; width: 280px; height: 60px; box-sizing: border-box; border: 1px solid #bbb; line-height: 60px; padding-left: 26px;}
+#cont #cont3 a:nth-child(3) span{margin-top: 30px; background: url("../imges/icon_more_left.png") no-repeat right 26px center;}
+#cont #cont3 a:nth-child(4) span{margin-top: 5px; background: url("../imges/icon_more_left.png") no-repeat right 26px center;}
+
+/*guide*/
+#guide{padding-bottom: 100px;}
+#guide p{font-size: 36px; font-family: 'ntb';text-align: center; padding: 80px 0; }
+#guide ul li{float: left; width:240px; height: 174px; text-align: center;}
+#guide ul li:hover{box-shadow: 0 3px 5px #686868; position: relative;}
+#guide p{font-size: 36px; font-family: 'ntb';text-align: center; padding: 80px 0; }
+#guide ul li a{color: #fff;}
+#guide ul li a dl dt{font-size: 20px; font-family: 'ntb'; margin-top: 40px;}
+#guide ul li a dl dd{font-size: 15px; font-family: 'ntr'; margin-top: 20px;}
+#guide ul li:nth-child(1){background: #309ddd;}
+#guide ul li:nth-child(2){background: #168ed4;}
+#guide ul li:nth-child(3){background: #0182cd;}
+#guide ul li:nth-child(4){background: #087dc1;}
+#guide ul li a{position: relative;}
+#guide ul li a img{position:absolute; top: -25px; left: -25px; opacity: 0; }
+#guide ul li:hover a img{ opacity: 1; }
+
+/*banr*/
+#banr{padding-bottom: 100px;}
+#banr ul li{float: left; width: 470px; height: 235px;}
+#banr ul li p{padding:50px 0 25px 40px; font-size: 30px; letter-spacing: -2px; line-height: 1.3;  font-family: 'ntb'; color: #222;}
+#banr ul li:first-child{background: url("../imges/onmoney_main_banner_new_01.png") no-repeat center; margin-right:20px; }
+#banr ul li:last-child{background: url("../imges/onmoney_main_banner_new_03.jpg") no-repeat center;}
+#banr ul li a{width: 200px; border: 1px solid #222; box-sizing: border-box; border-radius: 100px; display: block; margin-left: 40px; line-height: 50px; text-align: center; color: #222;}
+
+/*footer*/
+footer{background: #fff; border-top: 2px solid #ddd;}
+footer #info{ border-bottom: 1px solid #ddd;}
+footer #info ul{height: 40px; line-height: 40px; }
+footer #info ul li{float: left; padding-right: 60px; font-size: 14px;}
+footer #info ul li img{margin: 15px 0 0 10px;}
+footer p{font-size: 12px; color: #777; padding-top: 20px;}
+footer p:last-child{padding: 15px 0 20px;}
+
+
+
