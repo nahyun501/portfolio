@@ -38,7 +38,6 @@
 				navigationPosition: 'right',
 				navigationTooltips: ['MAIN', 'BIO &amp; CHEMICAL', 'LOCATIONS', 'SERVICE'],
 				afterLoad: function(anchorLink, index){
-					console.log(index);
 					if (index >= 3) {
 						$("header").addClass("bg");
 						$("#fp-nav ul li .fp-tooltip.right").addClass("navy");

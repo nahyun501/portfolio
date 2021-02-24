@@ -80,10 +80,10 @@ $(".my_skill li").click(function(){
 
 
 /*마우스 효과*/
-/*
+
 $(document).ready(function(){
-  
-  var mousePos = {};
+
+var mousePos = {};
 
  function getRandomInt(min, max) {
    return Math.round(Math.random() * (max - min + 1)) + min;
@@ -114,12 +114,11 @@ $(document).ready(function(){
       var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;"; 
 
       var style = left+top+color+size;
-      $("<div class='ball' style='" + style + "'></div>").appendTo('body').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();}); 
+      $("<div class='ball' style='" + style + "'></div>").appendTo('.section0').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();}); 
     }
   }, 1);
-
 });
-*/
+
 
 /*web 호버했을때 도형 아래로 움직이기*/
 $(".port_web li a").hover(
