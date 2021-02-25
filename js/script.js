@@ -42,7 +42,7 @@ $(".my_skill li:nth-child(3)").click(function(){
 		num2 = setInterval(count2Fn, 13);
 		function count2Fn(){
 			count2++;
-			if (count2 > 80){
+			if (count2 > 70){
 				clearInterval(num2);
 			} else {
 				$(".number2").eq(0).text(count2 + "%");
